@@ -1,0 +1,15 @@
+{
+  "presets": ["es2015-node4"],
+  "plugins": [
+      ["transform-async-to-module-method", {
+          "module": "bluebird-co",
+          "method": "coroutine"
+      }],
+      ["babel-plugin-module-alias", [
+              { "src": "./lib/packages", "expose": "packages" },
+              { "src": "./lib/constants", "expose": "constants" },
+              { "src": "./lib/helpers", "expose": "helpers" }
+      ]],
+      "transform-object-rest-spread"
+  ]
+}

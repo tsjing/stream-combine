@@ -1,0 +1,32 @@
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+# Documentation directory
+docs/
+
+# Covers JetBrains IDEs
+*.iml
+
+## Directory-based project format:
+.idea
+
+# ignore compiled files
+#lib/
+
+# Runtime configuration for swagger app
+config/runtime.yaml
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+coverage
+tst
+tmp
+
+*.tap
+
+

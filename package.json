@@ -1,0 +1,50 @@
+{
+  "name": "@tsjing/combine-stream",
+  "version": "1.0.0",
+  "description": "Combines different event streams chronologically",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "_mocha -R spec --recursive $(find lib -name '*.spec.js')",
+    "build": "gulp default",
+    "prepublish": "gulp default",
+    "coverage": "istanbul cover -x *.spec.js _mocha -- -R spec --recursive $(find lib -name '*.spec.js')",
+    "ci-test": "istanbul cover -x *.spec.js _mocha -- -R tap --recursive $(find lib -name '*.spec.js') > test.tap && istanbul report clover"
+  },
+  "author": "Hilke Heremans",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "bluebird-co": "^2.1.1",
+    "config": "^1.19.0",
+    "cuid": "^1.3.8",
+    "json5": "^0.4.0",
+    "lodash": "^4.11.1",
+    "stream": "0.0.2"
+  },
+  "devDependencies": {
+    "async": "^2.0.0-rc.3",
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.26",
+    "babel-plugin-module-alias": "^1.3.0",
+    "babel-plugin-transform-async-to-module-method": "^6.3.13",
+    "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-preset-es2015-node4": "^2.0.2",
+    "chai": "^3.4.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-flowtype": "^0.4.8",
+    "gulp-print": "^2.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5",
+    "istanbul": "^0.4.2",
+    "jshint-sourcemap-reporter": "0.0.1",
+    "mocha": "^2.3.4",
+    "mongodb": "^2.1.18",
+    "snazzy": "^2.0.1",
+    "standard": "^5.4.1"
+  },
+  "standard": {}
+}
