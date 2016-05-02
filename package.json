@@ -1,6 +1,6 @@
 {
   "name": "@tsjing/combine-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combines different event streams chronologically",
   "main": "lib/index.js",
   "scripts": {
